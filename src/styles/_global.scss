@@ -1,0 +1,26 @@
+// VARIABLES
+// ==========================================================================
+
+@import '~@aurora_app/ui-library/lib/styles/_global.scss';
+
+$color-gold: #c98c15;
+
+@mixin recruiter {
+  color: $color-success-secondary;
+  background-color: #dfece1;
+}
+
+@mixin admin {
+  color: $color-primary;
+  background-color: $color-primary-light;
+}
+
+@mixin billing {
+  color: $color-purple-radio;
+  background-color: #eedff8;
+}
+
+@mixin owner {
+  color: $color-gold-radio;
+  background-color: #faeccb;
+}

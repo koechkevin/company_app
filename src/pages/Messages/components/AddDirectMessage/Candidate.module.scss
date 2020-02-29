@@ -1,0 +1,58 @@
+@import "../../../../styles/global";
+
+.candidate {
+  padding: 11px 22px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border-bottom: 1px solid $color-gray-regular;
+  cursor: pointer;
+
+  @include respond-to('md-large') {
+    padding: 11px;
+  }
+
+  h5 {
+    margin-bottom: -5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: $color-primary;
+
+    ~span {
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+
+  h6 {
+    margin-left: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    color: $color-primary;
+
+    @include respond-to('sm') {
+      margin-left: 45px;
+    }
+  }
+
+  .specialists {
+    display: inline-block;
+    max-width: 200px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .inCall {
+    font-size: 13px;
+    min-width: 55px;
+    color: $color-base-dark-gray;
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+
+  .avatar {
+    margin-right: 15px;
+  }
+}

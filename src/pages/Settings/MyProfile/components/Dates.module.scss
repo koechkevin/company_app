@@ -1,0 +1,21 @@
+@import '../../../../styles/_global';
+
+.dates {
+  padding: 0 16px;
+
+  :global(.ant-col) {
+    height: 32px;
+    margin-bottom: 8px;
+    @include flex-center-vertical;
+
+    :global(.ant-typography) {
+      font-size: 16px;
+    }
+
+    &:global(.ant-col-8) {
+      :global(.ant-typography) {
+        color: $color-base-dark-gray;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import '../../../styles/_global';
+
+.title {
+  margin: 16px auto;
+
+  h4 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}
+
+.list {
+  margin-top: 8px;
+  margin-bottom: 32px;
+  overflow-y: auto;
+}
+
+.overlay {
+  padding-top: 20px;
+  width: 224px;
+  margin-top: 10px;
+}
+
+.search {
+  :global {
+    .ant-input {
+      width: 278px;
+    }
+  }
+}

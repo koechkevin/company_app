@@ -1,0 +1,27 @@
+@import '../../../styles/_global';
+
+.myProfile {
+  h4 {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  .header {
+    padding: 16px;
+
+    @include respond-to('xs-l') {
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: 1px solid $color-lighter-dark;
+    }
+  }
+
+  .title {
+    color: $color-base-dark;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 32px;
+    @include flex-center-vertical;
+  }
+}

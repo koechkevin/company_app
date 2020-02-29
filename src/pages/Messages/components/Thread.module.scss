@@ -1,0 +1,51 @@
+@import "../../../styles/global";
+
+.root {
+  padding: 11px 22px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border-bottom: 1px solid $color-gray-regular;
+  cursor: pointer;
+
+  @include respond-to('md-large') {
+    padding: 11px;
+  }
+
+  .col {
+    display: flex;
+    align-items: center;
+
+    >span.text {
+      padding-left: 6px;
+      max-width: 300px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 14px;
+      white-space: nowrap;
+
+      &:hover {
+        white-space: normal;
+      }
+    }
+  }
+
+  .avatars {
+    position: relative;
+    width: 45px;
+    height: 40px;
+
+    >span {
+      position: absolute;
+
+      &:first-child {
+        top: 0;
+        left: 0;
+      }
+
+      &:last-child {
+        top: 7px;
+        left: 7px;
+      }
+    }
+  }
+}

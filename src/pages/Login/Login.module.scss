@@ -1,0 +1,50 @@
+@import '../../styles/_global';
+
+.container {
+  min-height: 100vh;
+  background-color: white;
+}
+
+.content {
+  width: 100%;
+  max-width: 448px;
+  flex-direction: column;
+
+  @include respond-to('xs-l') {
+    padding: 16px;
+
+    :global(.ant-input) {
+      font-size: 16px;
+    }
+  }
+}
+
+.logo {
+  margin-bottom: 72px;
+  img {
+    height: 50px;
+  }
+
+  @include respond-to('xs-l') {
+    width: 134px;
+    img {
+      height: 32px;
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  align-self: flex-end;
+  color: $color-base-dark-gray;
+  padding-top: 60px;
+  margin-bottom: 80px;
+
+  span {
+    color: $color-text-gray;
+  }
+
+  img {
+    margin-left: 5px;
+  }
+}

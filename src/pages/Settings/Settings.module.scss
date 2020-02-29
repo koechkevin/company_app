@@ -1,0 +1,37 @@
+@import '../../styles/_global.scss';
+
+.settings {
+  height: 100%;
+  background-color: $color-white;
+
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 12px;
+    margin: 0;
+  }
+
+  .menuBar {
+    width: 310px;
+
+    :global(.ant-avatar) {
+      align-self: flex-end;
+    }
+
+    a {
+      color: inherit;
+    }
+  }
+
+  .routes {
+    width: 100%;
+    padding: 0 32px 32px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-width: calc(100vw - 508px);
+
+    @include respond-to('sm') {
+      padding: 16px 16px 88px;
+    }
+  }
+}

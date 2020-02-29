@@ -1,0 +1,25 @@
+@import '../styles/_global.scss';
+
+
+.tags {
+  padding: 2px 7px 2px 8px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: $color-gray-regular;
+  margin-right: 7px;
+  border-radius: 4px;
+  display: inline-block;
+  &.company-admin, &.aurora-admin {
+    @include admin;
+  }
+  &.company-billing {
+    @include billing;
+  }
+  &.company-recruiter {
+    @include recruiter;
+  }
+  &.company-owner {
+    @include owner;
+  }
+}

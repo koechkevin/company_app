@@ -1,0 +1,209 @@
+@import '../../../styles/global';
+
+.listItem {
+  padding: 8px 16px;
+  border-bottom: 1px solid $color-gray-regular;
+  cursor: pointer;
+
+  .moreBtn {
+    font-size: 24px;
+  }
+
+  &:hover {
+    background: $color-gray-light;
+
+    .moreBtn {
+      color: $color-base-dark-gray;
+      font-size: 24px;
+    }
+  }
+
+  :global {
+    .ant-checkbox-inner {
+      border-color: $color-base-gray;
+    }
+
+    .ant-checkbox-input:focus + .ant-checkbox-inner,
+    .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+    .ant-checkbox:hover .ant-checkbox-inner {
+      border-color: $color-primary;
+    }
+
+    .ant-checkbox-checked {
+      &::after {
+        border-color: $color-primary;
+      }
+
+      .ant-checkbox-inner {
+        border-color: $color-primary;
+        background-color: $color-primary;
+      }
+    }
+  }
+}
+
+.label {
+  font-size: 12px;
+  color: rgba($color: $color-base-dark, $alpha: 0.6);
+}
+
+.moreBtn {
+  cursor: pointer;
+  color: $color-button-gray;
+}
+
+:global {
+  .ant-checkbox-inner {
+    border-radius: 4px;
+    border-color: $color-primary;
+  }
+}
+
+.jobId {
+  font-size: 12px;
+  color: rgba($color: $color-base-dark, $alpha: 0.6);
+  margin-left: 5px;
+}
+
+.buttonLink {
+  padding: 1px 8px;
+  margin-left: 16px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: $color-primary !important;
+  background-color: $color-primary-light;
+}
+
+.elipsis {
+  @include display-flex();
+  justify-content: flex-end;
+}
+
+.applicants {
+  color: rgba($color: $color-base-dark, $alpha: 0.6);
+  @include display-flex();
+  flex-direction: column;
+  align-items: flex-start;
+  color: $color-primary;
+  font-size: 12px;
+  padding-left: 0 !important;
+
+  .new {
+    color: $color-primary;
+    background-color: $color-primary-light;
+    border-radius: 2px;
+    margin-top: 10px;
+    font-weight: 600;
+    height: 17px;
+    padding: 0 4px;
+    text-align: center;
+  }
+}
+
+.jobBoards {
+  color: rgba($color: $color-base-dark, $alpha: 0.6);
+  font-size: 12px;
+  @include display-flex();
+  flex-direction: column;
+  align-content: flex-start;
+
+  .moreBoards {
+    background-color: $color-button-gray;
+    padding: 0 6px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 5px;
+    align-self: flex-start;
+  }
+}
+
+.location {
+  font-size: 12px;
+  color: rgba($color: $color-base-dark, $alpha: 0.6);
+  text-align: left;
+  .city {
+    text-transform: capitalize;
+  }
+  .state {
+    text-transform: uppercase;
+  }
+  .country {
+    text-transform: uppercase;
+  }
+  :global {
+    div.ant-col {
+      padding-left: 0 !important;
+    }
+  }
+}
+
+.status {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: $color-gold;
+  @include display-flex();
+  align-items: center;
+  svg {
+    font-size: 14px;
+    color: $color-gold;
+  }
+}
+
+.draft {
+  .time {
+    color: rgba($color: $color-base-dark, $alpha: 0.6);
+  }
+  color: $color-primary;
+  :global(.ant-typography) {
+    color: $color-primary;
+  }
+  svg {
+    color: $color-primary;
+  }
+}
+
+.in-review {
+  :global {
+    color: $color-gold;
+    .ant-typography {
+      color: $color-gold;
+    }
+  }
+}
+
+.completed {
+  svg {
+    color: $color-success;
+  }
+}
+
+.hiringTeam {
+  @include display-flex();
+  flex-flow: row wrap;
+  height: 24px;
+  overflow: hidden;
+
+  .avatar {
+    margin-left: -8px;
+    :global {
+      .ant-avatar-circle {
+        border: 2px solid $color-white;
+      }
+
+      .ant-avatar-string {
+        margin-top: -2px;
+      }
+    }
+    img {
+      border-radius: 50%;
+    }
+  }
+}
+
+.jobTitle {
+  :global(.ant-typography) {
+    color: $color-base-dark-gray;
+  }
+}

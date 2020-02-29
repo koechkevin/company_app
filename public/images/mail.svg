@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="87px" height="74px" viewBox="0 0 87 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>mail</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Company-Settings-|-Invite-a-user" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="13.1.6-Corporate-Portal---Settings---Invite-People-Active-Modal" transform="translate(-698.000000, -254.000000)">
+            <g id="Invite-to-Airbus-Team" transform="translate(429.000000, 129.000000)">
+                <g id="mail" transform="translate(269.000000, 125.000000)">
+                    <g id="Group">
+                        <rect id="Rectangle" fill="#D5D5D5" x="0" y="1.6" width="83.2" height="58.4" rx="3.2"></rect>
+                        <path d="M46.0051429,33.3116567 C43.5730286,35.621392 39.6284571,35.621392 37.1948571,33.3116567 L34.0941714,30.4 C24.3939429,39.6057643 0,60 0,60 L32.1018286,60 L51.0996571,60 L83.2,60 C83.2,60 58.8060571,39.6057643 49.1058286,30.4 L46.0051429,33.3116567 Z" id="Path" fill="#E9E9E9" fill-rule="nonzero"></path>
+                        <path d="M2.13162821e-14,-3.90798505e-14 L37.1948571,33.1038154 C39.6269714,35.2930667 43.5715429,35.2930667 46.0051429,33.1038154 L83.2,-3.90798505e-14 L2.13162821e-14,-3.90798505e-14 Z" id="Path" fill="#FAFAFA" fill-rule="nonzero"></path>
+                    </g>
+                    <g id="Group" transform="translate(50.400000, 37.600000)" fill-rule="nonzero">
+                        <circle id="Oval" fill="#53C0B4" cx="18" cy="18" r="18"></circle>
+                        <path d="M27.8565,9.2685 C27.174,8.7945 26.241,8.9625 25.7685,9.6435 L17.3745,21.7035 L11.451,16.8405 C10.812,16.314 9.8655,16.4085 9.3405,17.049 C8.814,17.6895 8.907,18.6345 9.549,19.1595 L16.728,25.053 C16.998,25.2735 17.334,25.3935 17.679,25.3935 C17.7465,25.3935 17.8155,25.389 17.8845,25.38 C18.2985,25.3215 18.6705,25.095 18.9105,24.7515 L28.2315,11.358 C28.704,10.677 28.536,9.7425 27.8565,9.2685 Z" id="Path" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

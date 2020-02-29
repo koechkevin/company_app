@@ -1,0 +1,47 @@
+@import '../../styles/_global.scss';
+
+.title {
+  font-weight: bold;
+  font-size: 16px;
+  @include ellipsis;
+}
+
+.wrapper {
+  height: 64px;
+  overflow: hidden;
+
+  &:global(.ant-row-flex) {
+    flex-wrap: nowrap;
+  }
+
+  :global(.ant-col) {
+    height: 100%;
+    @include ellipsis;
+  }
+
+  .iconBtn:first-child {
+    @include respond-to('xs-l') {
+      display: none;
+    }
+  }
+}
+
+.newBtn {
+  margin: 0 16px 0 8px;
+  height: 32px;
+  padding-right: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  @include ellipsis;
+  flex-wrap: nowrap;
+  background-color: $color-primary-light;
+
+  :global(.ant-typography) {
+    color: $color-primary;
+  }
+}
+
+.avatar {
+  line-height: 0;
+  cursor: pointer;
+}

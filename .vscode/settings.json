@@ -1,0 +1,20 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "cSpell.words": [
+    "fortawesome",
+    "firstname",
+    "lastname",
+    "antd",
+    "camelize",
+    "sider",
+    "deauthorize",
+    "vacants",
+    "scroller",
+    "unmount",
+    "hocs",
+    "decamelize",
+    "chatbot",
+    "debouncer"
+  ]
+}

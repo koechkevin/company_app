@@ -1,0 +1,68 @@
+@import '../../styles/_global.scss';
+
+.root {
+  @include display-flex;
+  height: 100%;
+
+  .chat {
+    @include display-flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+
+    .chatContent {
+      flex: 1;
+      overflow: auto;
+      position: relative;
+      overflow-x: hidden;
+    }
+  }
+
+  .statistic {
+    min-width: 30%;
+    max-width: 30%;
+
+    @include respond-to('sm') {
+      display: none;
+    }
+  }
+
+  .messageInputWrapper {
+    margin: 12px 32px;
+
+    @include respond-to('sm') {
+      margin: 12px;
+    }
+  }
+}
+
+.title {
+  margin-bottom: 5px;
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.desc {
+  padding: 5px 15px 15px 15px;
+  font-size: 14px;
+  line-height: 25px;
+  color: $color-base-dark;
+  border-bottom: 1px $color-gray-regular solid;
+
+  a {
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .btn {
+    display: inline;
+    margin-left: 5px;
+  }
+}

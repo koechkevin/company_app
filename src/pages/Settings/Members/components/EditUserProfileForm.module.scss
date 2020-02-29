@@ -1,0 +1,33 @@
+@import '../../../../styles/_global.scss';
+
+.space {
+  :global(.ant-col-12) {
+    width: calc(50% - 8px);
+  }
+}
+
+.form {
+  :global(.ant-input) {
+    padding-right: 8px;
+  }
+
+  label::after {
+    content: '';
+  }
+}
+
+.submitArea {
+  @include display-flex;
+  :global(.ant-btn-primary) {
+    margin: 16px 0 32px;
+    min-width: 126px;
+  }
+  :global(.ant-btn-background-ghost.ant-btn-primary) {
+    color: $color-primary;
+    border-color: $color-primary;
+    min-width: 79px;
+  }
+  :global(.ant-col) {
+    margin-right: 8px;
+  }
+}

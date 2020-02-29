@@ -1,0 +1,115 @@
+@import '../../../../styles/_global';
+
+.listItem {
+  padding: 12px 8px;
+
+  :global(.ant-list-item-meta) {
+    align-items: flex-start;
+  }
+}
+
+.name {
+  &:global(.ant-typography) {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+
+    @include respond-to('xs-l') {
+      font-size: 16px;
+    }
+  }
+}
+
+.email {
+  &:global(.ant-typography) {
+    font-size: 16px;
+    color: $color-base-dark-gray;
+
+    @include respond-to('xs-l') {
+      font-size: 12px;
+    }
+  }
+}
+
+.avatar {
+  position: relative;
+
+  .icon {
+    position: absolute;
+    top: 29px;
+    right: 0;
+    border-radius: 4px;
+    background-color: $color-basic-light-gray;
+
+    @include respond-to('xs-l') {
+      left: 48px;
+      right: unset;
+      top: 8px;
+    }
+  }
+}
+
+.roles {
+  margin-bottom: 24px;
+  span {
+    padding: 7px 8px;
+    margin-top: 8px;
+    font-weight: 600;
+    line-height: 18px;
+    border-radius: 4px;
+    display: inline-block;
+    text-transform: capitalize;
+    background-color: $color-gray-regular;
+    margin-right: 8px;
+
+    &.company-admin,
+    &.aurora-admin {
+      @include admin;
+    }
+
+    &.company-owner {
+      @include owner;
+    }
+
+    &.company-billing {
+      @include billing;
+    }
+
+    &.company-recruiter {
+      @include recruiter;
+    }
+  }
+}
+
+.trailingRow {
+  @include respond-to('sm') {
+    width: 100%;
+  }
+
+  .trailing {
+    height: 100px;
+    flex-direction: column;
+
+    @include respond-to('xs-l') {
+      height: 40px;
+    }
+
+    @include respond-to('sm') {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      width: 100%;
+
+      .lastLogin {
+        @include flex-center-vertical;
+      }
+    }
+  }
+
+  .lastLogin {
+    padding-right: 8px;
+
+    &:global(.ant-typography) {
+      color: $color-base-dark-gray;
+    }
+  }
+}

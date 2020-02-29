@@ -1,0 +1,119 @@
+@import '../../../styles/_global.scss';
+
+.memberProfile {
+  padding-right: 32px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.profile {
+  padding: 32px;
+  border-radius: 12px 12px 0px 0px;
+  background-color: $color-gray-light;
+
+  :global {
+    .ant-tag {
+      border: none;
+    }
+  }
+}
+
+.header {
+  padding: 32px 32px 32px 16px;
+  height: 78px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: $color-white;
+
+  :global(.ant-typography) {
+    color: $color-black-light;
+    font-weight: bold;
+    margin-left: 16px;
+    font-size: 16px;
+  }
+
+  svg {
+    font-size: 16px;
+    color: $color-base-dark;
+  }
+}
+
+.name {
+  font-size: 24px;
+  color: $color-black-light;
+}
+
+.userInfo {
+  padding-left: 33px !important;
+
+  :global(.ant-tag) {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+}
+
+.avatar {
+  width: 112px;
+  position: relative;
+
+  .icon {
+    @include display-flex;
+    position: absolute;
+    margin-left: -16px;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    background-color: $color-white;
+    border-radius: 4px;
+  }
+}
+
+.signature {
+  color: rgba($color-base-dark, 0.6);
+  text-transform: capitalize;
+}
+
+.tabs {
+  position: sticky;
+  top: calc(48px + 78px);
+
+  :global {
+    .ant-tabs-nav .ant-tabs-tab-active {
+      color: $color-primary;
+      font-weight: bold;
+    }
+
+    .ant-tabs .ant-tabs-bar {
+      border-bottom: 1px solid $color-lighter-dark;
+      background-color: $color-gray-light;
+    }
+
+    .ant-tabs-nav .ant-tabs-tab {
+      width: max-content;
+      font-size: 12px;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+    .ant-tabs-ink-bar,
+    .ant-tabs-ink-bar-animated {
+      background-color: $color-primary;
+    }
+  }
+
+  :global(.ant-tabs-top) {
+    position: sticky;
+    top: calc(48px + 78px);
+  }
+}
+
+.lastLogin {
+  @extend .signature;
+  font-size: 12px;
+  text-align: center;
+  padding-right: 16px;
+  background-color: $color-gray-light;
+}

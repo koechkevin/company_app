@@ -1,0 +1,35 @@
+@import "../../../../styles/global";
+
+.root {
+  .label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .select {
+    margin: 15px 0 25px 0;
+    width: 100%;
+  }
+}
+
+.option {
+  @include display-flex;
+  flex-wrap: nowrap;
+  color: rgba($color-base-dark, 0.6);
+
+  .avatars {
+    :global {
+      .ant-avatar {
+        margin-right: 2px;
+      }
+    }
+  }
+
+  .text {
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

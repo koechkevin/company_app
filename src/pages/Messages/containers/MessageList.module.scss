@@ -1,0 +1,20 @@
+@import '../../../styles/global';
+
+.messages {
+  padding: 0;
+  outline: none;
+
+  .highlighted {
+    animation: fadeOut 4s;
+  }
+
+  @keyframes fadeOut {
+    0% {
+      background: rgba($color: $color-black, $alpha: 0.5);
+    }
+
+    100% {
+      background: transparent;
+    }
+  }
+}

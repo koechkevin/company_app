@@ -1,0 +1,23 @@
+@import '../../../styles/_global';
+
+.formContent {
+  width: 100%;
+  min-width: 328px;
+  max-width: 448px;
+  margin-top: 16%;
+
+  .loginBtn {
+    margin-top: 16px;
+    font-weight: 600;
+    height: 40px;
+  }
+
+  a {
+    font-weight: 600;
+    color: $color-primary;
+
+    &:hover {
+      color: $color-primary-dark;
+    }
+  }
+}

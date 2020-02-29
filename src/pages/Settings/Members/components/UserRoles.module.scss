@@ -1,0 +1,10 @@
+@import '../../../../styles/_global.scss';
+
+.link {
+  text-align: right;
+  color: $color-primary;
+
+  a {
+    color: inherit;
+  }
+}

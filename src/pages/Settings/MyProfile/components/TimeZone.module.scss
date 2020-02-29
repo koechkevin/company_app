@@ -1,0 +1,72 @@
+@import '../../../../styles/_global';
+
+.timezoneForm {
+  padding: 0 16px;
+
+  label:after {
+    content: '';
+  }
+}
+
+.inputCard {
+  padding: 12px 8px 16px;
+  margin-top: 24px;
+}
+
+.timezone {
+  :global(.ant-list-item-meta-title) {
+    font-weight: normal;
+  }
+}
+
+.cancel {
+  width: 84px;
+
+  @include respond-to('xs-l') {
+    width: calc(50% - 8px);
+  }
+
+  margin-right: 16px;
+}
+
+.submit {
+  width: 138px;
+
+  @include respond-to('xs-l') {
+    padding: 0;
+    width: calc(50% - 8px);
+  }
+}
+
+.label {
+  overflow: hidden;
+  .name {
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-base-dark;
+  }
+
+  .address {
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-base-dark-gray;
+  }
+}
+
+.select {
+  :global(.ant-select-selection-selected-value) {
+    overflow: hidden;
+    height: 32px;
+    color: $color-base-dark;
+  }
+}
+
+.selectItem {
+  &:global(.ant-select-dropdown-menu-item:hover:not(.ant-select-dropdown-menu-item-disabled)) {
+    background-color: $color-basic-light-gray;
+  }
+
+  &:global(.ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled)) {
+    background: $color-basic-light-gray;
+  }
+}

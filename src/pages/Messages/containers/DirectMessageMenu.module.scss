@@ -1,0 +1,14 @@
+@import '../../../styles/global';
+
+.menu {
+  margin-bottom: 32px;
+
+  @include respond-to('xs-l') {
+    margin-bottom: 132px;
+  }
+}
+
+.addIcon {
+  color: $color-white !important;
+  margin-right: -10px;
+}

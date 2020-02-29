@@ -1,0 +1,22 @@
+@import '../../../styles/_global';
+
+.card {
+  background-color: $color-gray-lighter;
+  height: 100%;
+  padding: 8px;
+  border-radius: 8px;
+
+  .children {
+    margin: 8px;
+  }
+
+  .head {
+    padding: 8px 0;
+
+    :global(.ant-typography) {
+      color: $color-black-light;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}

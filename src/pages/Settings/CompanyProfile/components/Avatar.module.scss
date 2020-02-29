@@ -1,0 +1,15 @@
+@import '../../../../styles/_global';
+
+.avatar {
+  display: inline-flex;
+  position: relative;
+  margin-bottom: 32px;
+
+  .icon {
+    position: absolute;
+    right: -16px;
+    bottom: -16px;
+    border-radius: 8px;
+    background-color: $color-basic-light-gray;
+  }
+}

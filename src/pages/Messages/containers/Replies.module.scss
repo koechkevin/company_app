@@ -1,0 +1,101 @@
+@import '../../../styles/global';
+
+.root {
+  @include display-flex;
+  flex-direction: column;
+  border-left: 1px solid $color-gray-regular;
+
+  &:global(.ant-layout-content) {
+    flex: 1;
+  }
+
+  :global {
+    .ant-list-empty-text {
+      visibility: hidden;
+      padding: 0;
+    }
+
+    .ant-empty-normal {
+      margin: 0;
+      margin-top: 10px;
+    }
+
+    .ant-empty-image {
+      display: none;
+    }
+
+    .ant-empty-description {
+      display: none;
+    }
+  }
+
+  @include respond-to('sm') {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: $color-white;
+  }
+
+  .header {
+    padding: 12px 16px;
+    background: $color-gray-light;
+    border-bottom: 1px solid $color-gray-regular;
+
+    @include respond-to('sm') {
+      padding: 12px 20px;
+      background: $color-white;
+    }
+
+    h4 {
+      flex: 1;
+      margin: 0;
+      font-size: 16px;
+      font-weight: bold;
+
+      @include respond-to('sm') {
+        margin-left: 25px;
+      }
+    }
+
+    .back {
+      display: none;
+      margin-left: -6px;
+
+      @include respond-to('sm') {
+        display: inline-block;
+      }
+    }
+
+    .remove {
+      margin-right: -6px;
+
+      @include respond-to('sm') {
+        display: none;
+      }
+    }
+
+    .dot {
+      margin-right: 5px;
+      width: 9px;
+      color: $color-success;
+    }
+  }
+
+  .body {
+    padding: 10px 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: calc(100vh - 47px - 97px);
+  }
+
+  .footer {
+    padding: 12px 32px;
+
+    @include respond-to('sm') {
+      padding: 0 12px 18px;
+    }
+  }
+}

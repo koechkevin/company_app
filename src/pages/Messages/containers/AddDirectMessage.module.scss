@@ -1,0 +1,57 @@
+@import "../../../styles/modal";
+@import "../../../styles/global";
+
+.root {
+  @include modal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $color-base-dark;
+
+  .container {
+    margin-top: 80px;
+    width: 608px;
+    overflow: hidden;
+
+    @include respond-to('sm') {
+      padding: 0 10px;
+    }
+
+    h1 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .list {
+      height: 683px;
+      overflow: auto;
+    }
+
+    .selectWrapper {
+      @include respond-to('sm') {
+        display: flex;
+      }
+    }
+
+    .select {
+      width: 545px;
+
+      @include respond-to('sm') {
+        flex: 1;
+        flex-wrap: nowrap;
+        width: 100%;
+      }
+    }
+
+    .selected {
+      display: flex;
+      align-items: center;
+
+      >span {
+        &:last-child {
+          margin-left: 9.6px;
+        }
+      }
+    }
+  }
+}

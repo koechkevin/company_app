@@ -1,0 +1,43 @@
+@import '../../../styles/_global.scss';
+
+.userProfile {
+  padding-bottom: 50px;
+}
+
+.title {
+  width: 100%;
+
+  :global(.ant-list-item-meta-title) {
+    margin: 4px auto;
+    font-weight: bold;
+  }
+}
+
+.dates {
+  padding: 8px;
+  border-radius: 4px;
+  background-color: $color-white;
+
+  :global(.ant-col) {
+    height: 32px;
+    padding: 8px 16px;
+    line-height: 12px;
+
+    :global(.ant-typography) {
+      font-size: 12px;
+    }
+  }
+
+  :global(.ant-col-14) {
+    :global(.ant-typography) {
+      color: $color-black-light;
+    }
+  }
+}
+
+.passwordRecovery {
+  @include display-flex;
+  @include flex-center;
+  position: relative;
+  top: 25%;
+}

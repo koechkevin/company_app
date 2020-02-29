@@ -1,0 +1,8 @@
+{
+  "/v1/auth/login": "/auth",
+  "/v1/users/profiles/:id": "/profile",
+  "/v1/users/activity-log": "/activityLog",
+  "/v1/jobs/jobs": "/jobs",
+  "/v1/jobs/jobs/:id": "/jobs/:id",
+  "/v1/*": "/$1"
+}

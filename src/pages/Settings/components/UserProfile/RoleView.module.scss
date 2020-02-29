@@ -1,0 +1,15 @@
+@import '../../../../styles/_global';
+
+.roles {
+  height: 95%;
+  max-height: 52px;
+  border-radius: 4px;
+  padding-left: 16px;
+  background-color: $color-gray-lighter;
+
+  :global(.ant-typography) {
+    color: $color-base-dark-gray;
+    margin-right: 16px;
+    font-size: 12px;
+  }
+}
